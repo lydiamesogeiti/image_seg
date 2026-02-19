@@ -2,10 +2,10 @@ device: 'cpu'
 num_classes: 1
 num_epochs: 10
 batch_size: 8
-learning_rate: 0.0001
+learning_rate: 0.0002
 ema_alpha: 0.9
 img_size: 256
-
+positive_weight: 5
 # IJmond bbox dataset paths
 img_npy_path: 'dataset/ijmond_bbox/img_npy'
 bbox_labels_path: 'dataset/ijmond_bbox/bbox_labels_1_aug_2025.json'
