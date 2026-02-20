@@ -8,7 +8,7 @@
 #SBATCH --mem=32G
 #SBATCH --time=08:00:00
 #SBATCH --mail-type=BEGIN,END,FAIL
-#SBATCH --mail-user=YOUREMAIL@example.com
+#SBATCH --mail-user=lydia.mesogeiti@student.uva.nl
 
 # ============================================================
 # GuidedBox Grid Search - Snellius SBATCH Script
@@ -69,8 +69,8 @@ python -c "import torch; print(f'PyTorch: {torch.__version__}'); print(f'CUDA av
 # ----------------------------------------------------------
 # 3. Navigate to project directory
 # ----------------------------------------------------------
-# Update this path to where your project lives on Snellius
-PROJECT_DIR="$HOME/image_seg/bbox_learn/bbox_learn"
+# Use absolute path - change this to your actual project path on Snellius
+PROJECT_DIR="/gpfs/home6/lmesogeiti/bbox_learn/bbox_learn"
 cd "$PROJECT_DIR" || { echo "ERROR: Could not cd to $PROJECT_DIR"; exit 1; }
 
 echo "Project dir:  $(pwd)"

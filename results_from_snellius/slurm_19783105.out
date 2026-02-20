@@ -1,0 +1,13 @@
+============================================
+Job ID:       19783105
+Node:         gcn54
+GPUs:         1
+Start time:   Fri Feb 20 13:17:01 CET 2026
+Working dir:  /gpfs/home6/lmesogeiti/bbox_learn/bbox_learn
+============================================
+Python:       /home/lmesogeiti/venvs/guidedbox/bin/python
+Python ver:   Python 3.9.21
+PyTorch: 2.8.0+cu126
+CUDA available: True
+GPU: NVIDIA A100-SXM4-40GB
+ERROR: Could not cd to /home/lmesogeiti/image_seg/bbox_learn/bbox_learn

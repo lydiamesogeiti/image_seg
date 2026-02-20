@@ -1,0 +1,9 @@
+============================================
+Job ID:       19783448
+Node:         gcn24
+GPUs:         1
+Start time:   Fri Feb 20 13:19:59 CET 2026
+Working dir:  /gpfs/home6/lmesogeiti/bbox_learn/bbox_learn
+============================================
+Python:       /home/lmesogeiti/venvs/guidedbox/bin/python
+Python ver:   Python 3.9.21

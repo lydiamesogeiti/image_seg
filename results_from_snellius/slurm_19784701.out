@@ -1,0 +1,21 @@
+============================================
+Job ID:       19784701
+Node:         gcn24
+GPUs:         1
+Start time:   Fri Feb 20 13:31:46 CET 2026
+Working dir:  /gpfs/home6/lmesogeiti/bbox_learn/bbox_learn
+============================================
+Python:       /home/lmesogeiti/venvs/guidedbox/bin/python
+Python ver:   Python 3.9.21
+PyTorch: 2.8.0+cu126
+CUDA available: True
+GPU: NVIDIA A100-SXM4-40GB
+Project dir:  /var/spool/slurm/slurmd/job19784701
+============================================
+Starting grid search...
+
+
+============================================
+Job finished:  Fri Feb 20 13:31:49 CET 2026
+Exit code:     0
+============================================
