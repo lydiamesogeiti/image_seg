@@ -1,0 +1,21 @@
+============================================
+Job ID:       19834289
+Node:         gcn72
+GPUs:         1
+Start time:   Sun Feb 22 14:14:08 CET 2026
+Working dir:  /gpfs/home6/lmesogeiti/bbox_learn/bbox_learn
+============================================
+Python:       /home/lmesogeiti/venvs/guidedbox/bin/python
+Python ver:   Python 3.9.21
+PyTorch: 2.8.0+cu126
+CUDA available: True
+GPU: NVIDIA A100-SXM4-40GB
+Project dir:  /gpfs/home6/lmesogeiti/bbox_learn/bbox_learn
+============================================
+Starting grid search...
+
+
+============================================
+Job finished:  Sun Feb 22 14:14:21 CET 2026
+Exit code:     0
+============================================

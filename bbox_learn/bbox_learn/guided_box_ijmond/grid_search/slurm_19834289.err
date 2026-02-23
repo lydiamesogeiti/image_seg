@@ -1,0 +1,3 @@
+usage: grid_search_v2.py [-h] [--config CONFIG] [--device DEVICE]
+                         [--output_dir OUTPUT_DIR]
+grid_search_v2.py: error: unrecognized arguments: --epochs 10 --num_workers 4

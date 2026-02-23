@@ -1,0 +1,20 @@
+{
+  "model_used": "grid_search/resnet50_3layer_ep10_lr1e-05_pw1.5",
+  "model_performance": {
+    "best_iou": 0.16160474310163409,
+    "final_iou": 0.08980060153407976
+  },
+  "generation_settings": {
+    "target_size": 512,
+    "threshold": 0.5,
+    "batch_size": 8
+  },
+  "results": {
+    "total_input_images": 610,
+    "successfully_generated": 610,
+    "failed": 0,
+    "success_rate": 100.0
+  },
+  "output_directory": "dataset/ijmond_bbox/generated_masks",
+  "mask_files_pattern": "*_mask.png"
+}

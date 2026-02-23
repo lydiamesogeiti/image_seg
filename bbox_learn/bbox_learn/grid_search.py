@@ -250,8 +250,8 @@ def load_records(config):
     matched_records = [r for r in all_records if str(r['id']) in npy_ids]
     logging.info(f"Records with matching npy files: {len(matched_records)}")
 
-    SMOKE_STATES = {3, 4, 9, 10, 11, 13, 15}
-    NO_SMOKE_STATES = {5, 12, 14}
+    SMOKE_STATES = {3, 4, 9, 10, 11, 13, 15, 16}
+    NO_SMOKE_STATES = {5, 12, 14, 18}
 
     smoke_records = [r for r in matched_records if r['label_state'] in SMOKE_STATES]
     no_smoke_records = [r for r in matched_records if r['label_state'] in NO_SMOKE_STATES]
@@ -284,8 +284,8 @@ def train_single_run(params, train_records, config, grid_epochs, grid_save_dir, 
         run_dataset, [run_train_size, run_val_size],
         generator=torch.Generator().manual_seed(42),
     )
-    run_train_loader = DataLoader(run_train_ds, batch_size=config['batch_size'], shuffle=True, num_workers=2, pin_memory=(device.type == 'cuda'))
-    run_val_loader = DataLoader(run_val_ds, batch_size=config['batch_size'], shuffle=False, num_workers=2, pin_memory=(device.type == 'cuda'))
+    run_train_loader = DataLoader(run_train_ds, batch_size=config['batch_size'], shuffle=True, num_workers=args.num_workers, pin_memory=(device.type == 'cuda'))
+    run_val_loader = DataLoader(run_val_ds, batch_size=config['batch_size'], shuffle=False, num_workers=args.num_workers, pin_memory=(device.type == 'cuda'))
 
     # Build model
     run_config = config.copy()
@@ -525,9 +525,9 @@ def main():
     # Parameter grid
     param_grid = {
         'learning_rate': [0.0001, 0.0002, 0.0005],
-        'ema_alpha': [0.85, 0.9, 0.95],
-        'img_size': [128, 256, 512],
-        'positive_weight': [3, 5, 7, 9],
+        'ema_alpha': [0.9],
+        'img_size': [256, 512, 1024],
+        'positive_weight': [1.5, 2, 2.5, 3],
     }
 
     keys = list(param_grid.keys())
